@@ -1,0 +1,150 @@
+html,
+body,
+header,
+footer,
+hgroup,
+nav,
+article,
+section,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+ul,
+li,
+body,
+div,
+p,
+img,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: dodgerblue;
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+}
+header {
+  background-color: yellow;
+  margin-bottom: 2em;
+}
+header h1 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-size: 3em;
+}
+div.game {
+  display: none;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  border: 20px solid #5c544f;
+  padding: 0;
+  background-image: url(../images/bummer.png);
+  background-size: 100% 100%;
+}
+div.game div.row {
+  display: block;
+  padding: 0;
+  height: 50px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+div.game div.row div.cell {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  min-height: 50px;
+  min-width: 50px;
+  box-sizing: border-box;
+}
+div.game div.row div.cell button {
+  border: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  color: transparent;
+  background-color: transparent;
+  text-indent: -999px;
+  font-size: 0;
+  line-height: 0;
+  background-size: 100% 100%;
+}
+div.game img.card {
+  position: relative;
+  top: -550px;
+  left: 300px;
+  height: 308px;
+  width: 200px;
+}
+div.game p.player_display {
+  width: 400px;
+  color: white;
+  position: relative;
+  top: -550px;
+  left: 200px;
+  font-size: 1.5em;
+  text-align: center;
+}
+div.game p.player_display img {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+form {
+  width: 25em;
+  margin: auto;
+  background-color: #cce7ff;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+form h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0 .5em 0;
+}
+form h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: .25em 0;
+  font-style: italic;
+}
+form input {
+  padding: .5em 1em;
+  border: none;
+  box-sizing: border-box;
+}
+form input[type=submit] {
+  background-color: #eee;
+}
+form input[type=submit]:hover,
+form input[type=submit]:active {
+  background-color: lightgrey;
+}
+form img {
+  height: 3em;
+  width: 3em;
+  vertical-align: middle;
+}
+form p {
+  text-align: center;
+  margin: .5em 0;
+}
+form p.gripe {
+  margin: .5em 0;
+  color: red;
+  font-style: italic;
+}
+/*# sourceMappingURL=bummer.css.map */

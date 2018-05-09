@@ -1,0 +1,70 @@
+@cell-size: 50px;
+
+div.game {
+  display: none;
+
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  border: 20px solid #5c544f;
+  padding: 0;
+
+  background-image: url(../images/bummer.png);
+  background-size: 100% 100%;
+
+  div.row {
+    display: block;
+    padding: 0;
+    height: @cell-size;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    div.cell {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0;
+      width: @cell-size;
+      height: @cell-size;
+      min-height: @cell-size;
+      min-width: @cell-size;
+      box-sizing: border-box;
+
+      button {
+        border: 0;
+        padding: 0;
+        width: @cell-size;
+        height: @cell-size;
+        color: transparent;
+        background-color: transparent;
+        text-indent: -999px;
+        font-size: 0;
+        line-height: 0;
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  img.card {
+    position: relative;
+    top: -550px;
+    left: 300px;
+    height: 308px;
+    width: 200px;
+  }
+
+  p.player_display {
+    width: 400px;
+    color: white;
+    position: relative;
+    top: -550px;
+    left: 200px;
+    font-size: 1.5em;
+    text-align: center;
+
+    img {
+      height: 2em;
+      width: 2em;
+      vertical-align: middle;
+    }
+  }
+}

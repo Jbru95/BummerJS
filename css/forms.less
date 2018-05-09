@@ -1,0 +1,54 @@
+@import "colors.less";
+
+form {
+  width: 25em;
+  margin: auto;
+
+  background-color: @block;
+  border-radius: @radius;
+  padding: 1em;
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 .5em 0;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: .25em 0;
+    font-style: italic;
+  }
+
+  input {
+    padding: .5em 1em;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    background-color: @input;
+  }
+
+  input[type=submit]:hover, input[type=submit]:active {
+    background-color: @hover;
+  }
+
+  img {
+    height: 3em;
+    width: 3em;
+    vertical-align: middle;
+  }
+
+  p {
+    text-align: center;
+    margin: .5em 0;
+  }
+
+  p.gripe {
+    margin: .5em 0;
+    color: red;
+    font-style: italic;
+  }
+}

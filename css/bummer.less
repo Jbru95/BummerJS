@@ -1,0 +1,33 @@
+html, body, header, footer, hgroup, nav, article, section,
+figure, figcaption, h1, h2, h3, ul, li, body, div, p, img,
+table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+@import "colors.less";
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: @background;
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+}
+
+header {
+  background-color: @heading;
+  margin-bottom: 2em;
+
+  h1 {
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-size: 3em;
+  }
+}
+
+@import "game.less";
+@import "forms.less";
